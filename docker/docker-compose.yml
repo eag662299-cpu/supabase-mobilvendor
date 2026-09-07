@@ -499,7 +499,7 @@ services:
       - supabase_internal
 
     volumes:
-      - ./volumes/functions:/home/deno/functions:z
+      - /opt/supabase/functions:/home/deno/functions:ro,z
       - deno-cache:/root/.cache/deno
 
     depends_on:
