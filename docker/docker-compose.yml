@@ -101,9 +101,9 @@ services:
 
     volumes:
       - /home/ec2-user/supabase-mobilvendor/docker/volumes/api/envoy/envoy.yaml:/etc/envoy/envoy.yaml:ro
-      - ./volumes/api/envoy/cds.yaml:/etc/envoy/cds.yaml:ro
-      - ./volumes/api/envoy/lds.template.yaml:/etc/envoy/lds.template.yaml:ro
-      - ./volumes/api/envoy/docker-entrypoint.sh:/opt/supabase/docker-entrypoint.sh:ro
+      - /home/ec2-user/supabase-mobilvendor/docker/volumes/api/envoy/cds.yaml:/etc/envoy/cds.yaml:ro
+      - /home/ec2-user/supabase-mobilvendor/docker/volumes/api/envoy/lds.template.yaml:/etc/envoy/lds.template.yaml:ro
+      - /home/ec2-user/supabase-mobilvendor/docker/volumes/api/envoy/docker-entrypoint.sh:/opt/supabase/docker-entrypoint.sh:ro
 
     environment:
       ANON_KEY: ${ANON_KEY}
