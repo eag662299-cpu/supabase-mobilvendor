@@ -635,7 +635,7 @@ services:
       - supabase_internal
 
     volumes:
-      - ./volumes/pooler/pooler.exs:/etc/pooler/pooler.exs:ro,z
+      - /opt/supabase/pooler/pooler.exs:/etc/pooler/pooler.exs:ro,z
 
     healthcheck:
       test:
