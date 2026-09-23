@@ -626,6 +626,9 @@ services:
     image: supabase/supavisor:2.9.5
     restart: unless-stopped
 
+    ports:
+      - "6543:6543"
+    
     ulimits:
       nofile:
         soft: 100000
