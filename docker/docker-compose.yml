@@ -628,6 +628,7 @@ services:
 
     ports:
       - "6543:6543"
+      - "100.69.149.54:5433:5432"
     
     ulimits:
       nofile:
